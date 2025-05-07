@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Rubik font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- background image div -->
+      <div class="background">
+        <img
+          class="pattern-background"
+          src="./images/pattern-bg-desktop.png"
+          alt="background image"
+        />
+        <img
+          class="map-background"
+          src="./images/map-example.png"
+          alt="map example"
+        />
+      </div>
+      <div class="forground">
+        <h1 class="title rubik-med">IP Address Tracker</h1>
+        <!-- <div class="search-bar"> -->
+        <seach class="search-input">
+          <input
+            class="input rubik-light"
+            type="search"
+            id="query"
+            placeholder="Search for any IP address or domain"
+          />
+          <div class="search-div">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path fill="" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+            </svg>
+          </div>
+        </seach>
+        <!-- </div> -->
+        <div class="results-bar">
+          <div class="result ip-address">
+            <h3 class="rubik-heavy">IP ADDRESS</h3>
+            <text class="rubik-med">1234.123.1234.123</text>
+          </div>
+          <div class="result location">
+            <h3 class="rubik-heavy">LOCATION</h3>
+            <text class="rubik-med">Glendale, NY 12331</text>
+          </div>
+          <div class="result timezone">
+            <h3 class="rubik-heavy">TIMEZONE</h3>
+            <text class="rubik-med">UTC-05:00</text>
+          </div>
+          <div class="result isp">
+            <h3 class="rubik-heavy">ISP</h3>
+            <text class="rubik-med">Topos 2</text>
+          </div>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Hayley Dixon</a>.
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

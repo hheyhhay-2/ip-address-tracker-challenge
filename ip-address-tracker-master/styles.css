@@ -1,0 +1,128 @@
+body {
+    /* background-image: url("./images/pattern-bg-desktop.png"); */
+    background-size: cover;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+   }
+   
+   
+   h1 {
+    color: white;
+    text-align: center;
+   }
+   .wrapper {
+    display: flex;
+    position: relative;
+   }
+   /** background images/map **/
+   x .background {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    border: 2px solid green;
+   }
+   .forground {
+    position: absolute;
+    z-index: 2;
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+   }
+   
+   
+   .pattern-background {
+    width: 100%;
+   }
+   
+   
+   .attribution {
+    font-size: 11px;
+    text-align: center;
+   }
+   .attribution a {
+    color: hsl(228, 45%, 44%);
+   }
+   /** Seach bar **/
+   .search-input {
+    display: flex;
+    height: 36px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   
+   .input {
+    padding: 10px;
+    margin: 0px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    width: 80%;
+   }
+   .search-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+    border-radius: 0 15px 15px 0;
+   }
+   svg {
+    display: block;
+   }
+   
+   
+   /** Results Bar **/
+   .results-bar {
+    display: flex;
+    border: 2px solid blue;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20%;
+   }
+   
+   
+   .result {
+    border: 2px solid pink;
+    width: 25%;
+   }
+   
+   
+   /** Font weights **/
+   .rubik-light {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+   }
+   
+   
+   .rubik-med {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+   }
+   .rubik-heavy {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: grey;
+   }
+   
